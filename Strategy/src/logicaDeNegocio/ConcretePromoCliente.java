@@ -1,6 +1,6 @@
 package logicaDeNegocio;
 
-public class ConcretePromoCliente implements IStrategy{
+public class ConcretePromoCliente implements IPromoção{
 
     @Override
     public int Calcula(int milhasvoadas) {

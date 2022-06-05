@@ -1,5 +1,5 @@
 package logicaDeNegocio;
-public class ConcreteCalculoNormal implements IStrategy {
+public class ConcreteCalculoNormal implements IPromoção {
 
     @Override
     public int Calcula(int milhaVoada) {

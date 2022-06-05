@@ -1,6 +1,6 @@
 package logicaDeNegocio;
 
-public class ConcretePromoSorte implements IStrategy{
+public class ConcretePromoSorte implements IPromoção{
 
     public double geraNum(){
         double nrandom = Math.random();

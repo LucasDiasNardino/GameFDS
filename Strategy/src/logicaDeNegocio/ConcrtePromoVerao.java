@@ -1,6 +1,6 @@
 package logicaDeNegocio;
 
-public class ConcrtePromoVerao implements IStrategy{
+public class ConcrtePromoVerao implements IPromoção{
 
     @Override
     public int Calcula(int milhaVoada) {

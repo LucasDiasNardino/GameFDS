@@ -1,5 +1,5 @@
 package logicaDeNegocio;
 
-public interface IStrategy {
+public interface IPromoção {
     public int Calcula(int milhaVoada);
 }

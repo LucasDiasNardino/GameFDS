@@ -4,7 +4,8 @@ import logicaDeNegocio.ConcreteCalculoNormal;
 import logicaDeNegocio.ConcretePromoCliente;
 import logicaDeNegocio.ConcretePromoSorte;
 import logicaDeNegocio.ConcrtePromoVerao;
-import logicaDeNegocio.IStrategy;
+import logicaDeNegocio.IPromoção;
+
 
 public class Context {
 /**
@@ -12,10 +13,10 @@ public class Context {
  */
     public static void main(String[] args) {
         //Cria os objetos de interface 
-        IStrategy promoçãonormal = new ConcreteCalculoNormal();
-        IStrategy promoçãocliente = new ConcretePromoCliente();
-        IStrategy promoçãodasorte = new ConcretePromoSorte();
-        IStrategy promoçãoverao = new ConcrtePromoVerao();
+        IPromoção promoçãonormal = new ConcreteCalculoNormal();
+        IPromoção promoçãocliente = new ConcretePromoCliente();
+        IPromoção promoçãodasorte = new ConcretePromoSorte();
+        IPromoção promoçãoverao = new ConcrtePromoVerao();
         
         //descobre quantas milhas o usuario possui
         System.out.println("Quantas milhas o senhor possui:");
