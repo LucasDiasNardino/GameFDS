@@ -1,9 +1,9 @@
 package Interface;
 
 public class Observable {
-    public interface obervable{
-        public void registerObserver(Observerr observer);
-        public void removeObserver(Observerr observer);
+    public interface observable{
+        public void registerObserver(Observer observer);
+        public void removeObserver(Observer observer);
         public void notifyObservers();  
     }
 }
