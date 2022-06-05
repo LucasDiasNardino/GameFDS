@@ -1,10 +1,12 @@
+package Decorator.src;
+
 import java.util.Scanner;
 
-import logicaDeNegocio.ConcreteCalculoNormal;
-import logicaDeNegocio.ConcretePromoCliente;
-import logicaDeNegocio.ConcretePromoSorte;
-import logicaDeNegocio.ConcrtePromoVerao;
-import logicaDeNegocio.IPromoção;
+import Decorator.src.logicaDeNegocio.ConcreteCalculoNormal;
+import Decorator.src.logicaDeNegocio.ConcretePromoCliente;
+import Decorator.src.logicaDeNegocio.ConcretePromoSorte;
+import Decorator.src.logicaDeNegocio.ConcrtePromoVerao;
+import Decorator.src.logicaDeNegocio.IPromoção;
 
 
 public class Context {

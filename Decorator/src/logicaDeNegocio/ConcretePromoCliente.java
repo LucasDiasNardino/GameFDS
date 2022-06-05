@@ -1,4 +1,4 @@
-package logicaDeNegocio;
+package Decorator.src.logicaDeNegocio;
 
 public class ConcretePromoCliente implements IPromoção{
 
