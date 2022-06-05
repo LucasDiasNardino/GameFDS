@@ -1,12 +1,9 @@
 package Interface;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-import Interface.Observable.observable;
-import Interface.Observer;
 
-public class GraficosObservable implements observable{
+public class GraficosObservable implements Observable{
     private List<Observer> observers = new ArrayList();
     private double xgrafico;
     private double ygrafico;
@@ -14,29 +11,12 @@ public class GraficosObservable implements observable{
     public GraficosObservable(double xgrafico, double ygrafico) {
         this.xgrafico = xgrafico;
         this.ygrafico = ygrafico;
-        this.notifyObservers();
-    }
-
-    @Override
-    public void registerObserver(Observer observer) {
-        // TODO Auto-generated method stub
-        observers.add(observer);
-    }
-
-    @Override
-    public void removeObserver(Observer observer) {
-        // TODO Auto-generated method stub
-        observers.remove(observer);
-    }
-
-    @Override
-    public void notifyObservers() {
-        // TODO Auto-generated m  // Chama o método de atualização de todos os observers disponíveis.
-            for (Observer ob : observers ) {
-                System.out.println("Notificando observers!");
-                  ob.update(ob);
-                }
         
     }
-    
+
+    @Override
+    public void update(Observer ob) {
+        // TODO Auto-generated method stub
+        
+    }    
 }
