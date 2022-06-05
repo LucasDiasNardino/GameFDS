@@ -1,5 +1,5 @@
 package logicaDeNegocio;
-import java.util.*;
+
 public class ConcretePromoSorte implements IStrategy{
 
     public double geraNum(){
@@ -13,8 +13,14 @@ public class ConcretePromoSorte implements IStrategy{
         double naleatotio = geraNum();        
             if(naleatotio >= 0.1 && naleatotio <= 0.7){
                 milhasvoadas =(int) (milhasvoadas * naleatotio);
+                System.out.println("Parabens voce ganhou!!!!!!!");
+                return milhasvoadas;
+                
+            }else{
+
+                System.out.println("Mais sorte da proxima vez!");
                 return milhasvoadas;
             }
-        return milhasvoadas;
+        
     }
 }
