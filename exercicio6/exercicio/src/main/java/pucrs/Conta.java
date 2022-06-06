@@ -13,6 +13,7 @@ public class Conta {
 	private double taxaRemuneracao;
 	private double taxaSaldoNegativo;
 	private Categoria categoriaInicial;
+	private EstadoCategoria estado;
 
 	public static class Builder {
 		private Long numero;
@@ -22,6 +23,7 @@ public class Conta {
 		private double taxaRemuneracao = 0;
 		private double taxaSaldoNegativo = 0;
 		private Categoria categoriaInicial = Categoria.NORMAL;
+		private EstadoCategoria estado = new EstadoCategoriaNormal();
 
 		public Builder() {
 		}
@@ -61,6 +63,13 @@ public class Conta {
 			return this;
 		}
 
+		public Builder estadoConta(EstadoCategoria estado){
+			this.estado = estado;
+			return this;
+		}
+
+		
+
 		public Conta build() {
 			return new Conta(this);
 		}
@@ -74,6 +83,7 @@ public class Conta {
 		this.taxaRemuneracao = builder.taxaRemuneracao;
 		this.taxaSaldoNegativo = builder.taxaSaldoNegativo;
 		this.categoriaInicial = builder.categoriaInicial;
+		this.estado = builder.estado;
 	}
 
 	public Long getNumero() {
@@ -130,5 +140,13 @@ public class Conta {
 
 	public void setCategoriaInicial(Categoria categoriaInicial) {
 		this.categoriaInicial = categoriaInicial;
+	}
+
+	public EstadoCategoria getEstadoConta(){
+		return estado;
+	}
+	
+	public void setEstadoConta(EstadoCategoria estado){
+		this.estado = estado;
 	}
 }
