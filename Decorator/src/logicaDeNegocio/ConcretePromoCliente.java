@@ -1,6 +1,8 @@
 package Decorator.src.logicaDeNegocio;
 
-public class ConcretePromoCliente implements IPromoção{
+public class ConcretePromoCliente implements DecoratorPromoção{
+
+    double valorbonus;
 
     @Override
     public int Calcula(int milhasvoadas) {
@@ -10,5 +12,11 @@ public class ConcretePromoCliente implements IPromoção{
         }else{
             return milhasvoadas;
         }
+    }
+
+    @Override
+    public double CalculaBonus(int milhasVoadas){
+        valorbonus = milhasVoadas * 0.45;
+        return valorbonus; 
     }
 }
