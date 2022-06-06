@@ -6,7 +6,7 @@ public class ConcretePromoVerao implements DecoratorPromoção{
 
     @Override
     public int Calcula(int milhaVoada) {
-        return milhaVoada*2;
+        return milhaVoada * 2;
     }
 
     @Override
