@@ -1,6 +1,5 @@
 package pucrs;
 
-import pucrs.Conta;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
