@@ -1,0 +1,7 @@
+O adapter foi usado porque queriamos modificar o código da lista sem ter que alterar o resto da aplicação. Pra isso o adapter recebe
+as mesmas requisições do código antigo, e as adapta para a lista nova.
+A classe antiga precisava receber como parametro a posição de remoção, adição e o get, podendo ser a primeira ou ultima posição. 
+
+Na classe adapter: 
+    Seus metodos recebem uma posição, e se essa posição for a primeira ele utiliza os metodos do linkedList que os adicionam, 
+    removem ou obtem na primeira posição, caso contrário, na ultima. 
