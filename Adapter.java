@@ -2,7 +2,7 @@ package pucrs;
 
 import java.util.LinkedList;
 
-public class Adapter implements IAdapter {
+public class Adapter {
 
     LinkedList<String> lista = new LinkedList();
 
