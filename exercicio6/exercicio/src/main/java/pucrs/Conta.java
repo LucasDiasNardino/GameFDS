@@ -1,74 +1,18 @@
 package pucrs;
 
-private Long numero;
+enum Categoria {
+	NORMAL, ADVANCED, PREMIUM
+};
+
+public class Conta {
+
+	private Long numero;
 	private String nomeCorrentista;
 	private int saldoLivreInicial;
 	private int salAplicacaoInicial;
 	private double taxaRemuneracao;
 	private double taxaSaldoNegativo;
 	private Categoria categoriaInicial;
-
-	public Long getNumero() {
-		return numero;
-	}
-
-	public void setNumero(Long numero) {
-		this.numero = numero;
-	}
-
-	public String getNomeCorrentista() {
-		return nomeCorrentista;
-	}
-
-	public void setNomeCorrentista(String nomeCorrentista) {
-		this.nomeCorrentista = nomeCorrentista;
-	}
-
-	public int getSaldoLivreInicial() {
-		return saldoLivreInicial;
-	}
-
-	public void setSaldoLivreInicial(int saldoLivreInicial) {
-		this.saldoLivreInicial = saldoLivreInicial;
-	}
-
-	public int getSalAplicacaoInicial() {
-		return salAplicacaoInicial;
-	}
-
-	public void setSalAplicacaoInicial(int salAplicacaoInicial) {
-		this.salAplicacaoInicial = salAplicacaoInicial;
-	}
-
-	public double getTaxaRemuneracao() {
-		return taxaRemuneracao;
-	}
-
-	public void setTaxaRemuneracao(double taxaRemuneracao) {
-		this.taxaRemuneracao = taxaRemuneracao;
-	}
-
-	public double getTaxaSaldoNegativo() {
-		return taxaSaldoNegativo;
-	}
-
-	public void setTaxaSaldoNegativo(double taxaSaldoNegativo) {
-		this.taxaSaldoNegativo = taxaSaldoNegativo;
-	}
-
-	public Categoria getCategoriaInicial() {
-		return categoriaInicial;
-	}
-
-	public void setCategoriaInicial(Categoria categoriaInicial) {
-		this.categoriaInicial = categoriaInicial;
-	}
-
-enum Categoria {
-	NORMAL, ADVANCED, PREMIUM
-};
-
-public class Conta {
 
 	public static class Builder {
 		private Long numero;
@@ -130,5 +74,61 @@ public class Conta {
 		this.taxaRemuneracao = builder.taxaRemuneracao;
 		this.taxaSaldoNegativo = builder.taxaSaldoNegativo;
 		this.categoriaInicial = builder.categoriaInicial;
+	}
+
+	public Long getNumero() {
+		return numero;
+	}
+
+	public void setNumero(Long numero) {
+		this.numero = numero;
+	}
+
+	public String getNomeCorrentista() {
+		return nomeCorrentista;
+	}
+
+	public void setNomeCorrentista(String nomeCorrentista) {
+		this.nomeCorrentista = nomeCorrentista;
+	}
+
+	public int getSaldoLivreInicial() {
+		return saldoLivreInicial;
+	}
+
+	public void setSaldoLivreInicial(int saldoLivreInicial) {
+		this.saldoLivreInicial = saldoLivreInicial;
+	}
+
+	public int getSalAplicacaoInicial() {
+		return salAplicacaoInicial;
+	}
+
+	public void setSalAplicacaoInicial(int salAplicacaoInicial) {
+		this.salAplicacaoInicial = salAplicacaoInicial;
+	}
+
+	public double getTaxaRemuneracao() {
+		return taxaRemuneracao;
+	}
+
+	public void setTaxaRemuneracao(double taxaRemuneracao) {
+		this.taxaRemuneracao = taxaRemuneracao;
+	}
+
+	public double getTaxaSaldoNegativo() {
+		return taxaSaldoNegativo;
+	}
+
+	public void setTaxaSaldoNegativo(double taxaSaldoNegativo) {
+		this.taxaSaldoNegativo = taxaSaldoNegativo;
+	}
+
+	public Categoria getCategoriaInicial() {
+		return categoriaInicial;
+	}
+
+	public void setCategoriaInicial(Categoria categoriaInicial) {
+		this.categoriaInicial = categoriaInicial;
 	}
 }
