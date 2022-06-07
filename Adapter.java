@@ -1,4 +1,4 @@
-package pucrs;
+
 
 import java.util.LinkedList;
 
@@ -6,7 +6,6 @@ public class Adapter {
 
     LinkedList<String> lista = new LinkedList();
 
-    @Override
     public void add(Position p, String s) {
         if (p == Position.First) {
             lista.addFirst(s);
@@ -16,7 +15,6 @@ public class Adapter {
 
     }
 
-    @Override
     public void remove(Position p, String s) {
         if (p == Position.First) {
             lista.removeFirst();
@@ -26,7 +24,6 @@ public class Adapter {
 
     }
 
-    @Override
     public String get(Position p) {
         String aux;
         if (p == Position.First) {
