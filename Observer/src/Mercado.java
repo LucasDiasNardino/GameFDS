@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 import Interface.EventListener;
@@ -8,7 +9,11 @@ public class Mercado{
     private List<EventListener> observadores;
 
 
-   
+    
+    public Mercado() {
+        this.observadores = new ArrayList<>();
+    }
+
 
 
     public void subscribe(EventListener listener) {
