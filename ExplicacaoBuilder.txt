@@ -1,3 +1,9 @@
+Para evitar que fosse criado vários construtores que diferenciassem a conta com seus saldos livre e de aplicação, taxas de saldo negativo e de remuneração, categorias etc, então criamos o builder, para facilitar a criação do objeto.
 O Builder foi usado pois a classe Conta possui muitos parâmetros e apenas 2 são obrigatórios na construção de uma instância da classe.
 
 Ao criar um objeto conta, utiliza-se uma classe aninhada com métodos que atuam como "set" das informações iniciais e após, utiliza-se o método build, que faz a instanciação de fato do objeto da classe conta.
+Podemos criar o objeto da seguinte forma:
+Conta conta = new Conta.Builder()
+                .numero(123L)
+                .nomeCorrentista("Leticia").build();
+E dessa forma só ir acrescentando as particularidades da conta ao objeto, muito mais eficiente do que ter vários construtores e passar os atributos por parametros.
