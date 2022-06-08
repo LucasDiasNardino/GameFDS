@@ -1,4 +1,4 @@
-Repo da gurizada :)
+Repo da gurizada :)  comit read-me
 
 Cada branch é referente a um grupo.
 Cada grupo pega dois tipos de padrão de projeto:
