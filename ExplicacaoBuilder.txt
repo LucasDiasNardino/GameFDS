@@ -1,0 +1,3 @@
+O Builder foi usado pois a classe Conta possui muitos parâmetros e apenas 2 são obrigatórios na construção de uma instância da classe.
+
+Ao criar um objeto conta, utiliza-se uma classe aninhada com métodos que atuam como "set" das informações iniciais e após, utiliza-se o método build, que faz a instanciação de fato do objeto da classe conta.
