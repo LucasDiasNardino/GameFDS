@@ -8,11 +8,7 @@ public class Mercado{
     private List<EventListener> observadores;
 
 
-    
-    public Mercado(List<EventListener> observadores) {
-        this.observadores = observadores;
-    }
-
+   
 
 
     public void subscribe(EventListener listener) {

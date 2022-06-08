@@ -1,6 +1,6 @@
 package Interface;
 
-public class Grafico implements EventListener {
+public class Grafico implements EventListener{
 
     private String x;
     private String y;
