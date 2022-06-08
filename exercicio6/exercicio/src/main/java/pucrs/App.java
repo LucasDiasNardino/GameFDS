@@ -23,6 +23,7 @@ public class App{
         int deposito;
         int retirada;
 
+        
         //Conta Normal
         System.out.println("Conta Normal: ");
 
@@ -36,6 +37,7 @@ public class App{
         
         //Conta Advanced
         System.out.println("Conta Advanced: ");
+        
 
         deposito = (int) contaAdvanced.getEstadoConta().depositoContaLivre(400, 300);
         contaAdvanced.setSaldoLivreInicial(deposito);
