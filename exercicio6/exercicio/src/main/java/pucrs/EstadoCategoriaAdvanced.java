@@ -2,8 +2,8 @@ package pucrs;
 
 public class EstadoCategoriaAdvanced implements EstadoCategoria {
 
-	public double depositoContaInvestimento(double saldoInvestimnto, double valorDeposito) {
-		return (valorDeposito * 1.1) + saldoInvestimnto;
+	public double depositoContaInvestimento(double saldoInvestimento, double valorDeposito) {
+		return (valorDeposito * 1.1) + saldoInvestimento;
 	}
 
 	public double retiraDescoberto(double limite, double valorRetirada, double saldoEmConta) {
