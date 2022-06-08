@@ -2,13 +2,19 @@ import java.util.List;
 
 import Interface.EventListener;
 
-public class Mercado {
+public class Mercado{
     
 
     private List<EventListener> observadores;
 
 
     
+    public Mercado(List<EventListener> observadores) {
+        this.observadores = observadores;
+    }
+
+
+
     public void subscribe(EventListener listener) {
         
         observadores.add(listener);
@@ -22,9 +28,9 @@ public class Mercado {
         }
     }
 
-    public void atualizaBlaBla() {
-        // logica de negocio
-        ///  if ...
+    public void atualizataxa() {
+    
+        ///  if mudança no mercado:
         this.notify("Alteracao nas taxas de juros ao consumidor");
     }
     
