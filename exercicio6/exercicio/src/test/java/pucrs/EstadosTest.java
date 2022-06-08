@@ -12,7 +12,7 @@ public class EstadosTest {
                         .categoriaInicial(Categoria.ADVANCED)
                         .estadoConta(new EstadoCategoriaAdvanced())
                         .build();
-
+                        
     public Conta contaPremium = 
                         new Conta.Builder()
                         .numero(12L)
