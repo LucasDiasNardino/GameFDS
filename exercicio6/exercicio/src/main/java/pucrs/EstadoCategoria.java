@@ -2,7 +2,7 @@ package pucrs;
 
 public interface EstadoCategoria {
 
-	static double juros = 0.05;
+	static double juros = 0.015;
 
 	public double depositoContaInvestimento(double saldoInvestimnto, double valorDeposito);
 
